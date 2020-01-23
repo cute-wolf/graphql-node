@@ -1,0 +1,13 @@
+# main configuration file for your Prisma setup
+
+# The HTTP endpoint for your Prisma API
+#endpoint: ''endpoint: https://us1.prisma.sh/lang-sky/graphql-node/dev
+
+
+# Points to the file that contains your datammodel
+datamodel: datamodel.prisma
+
+# Specifies language & location for the generated Prisma client
+generate:
+  - generator: javascript-client
+    output: ../src/generated/prisma-client
